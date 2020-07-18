@@ -1,26 +1,99 @@
-# basecode
+# Text-based Rogue-like Game
 
-We have modify the game package, all the code inside the engine code is remains same.
+SCHOOL OF IT, S1/2019, MONASH UNIVERSITY
 
-We had created new Enemy class which is extended from the Actor Class.
+FIT2099 (OBJECT ORIENTED DESIGN AND IMPLEMENTATION)
 
-The Goon, Grunt, Ninja, Q and Doctor Maybe and YugoMaxx class are extended from the Enemy class.
+ASSIGNMENT PROJECT
 
-There are three classes that we extend from Action class and implements from Action Factory which are StandStillBehaviour,
-InsultBehaviour and ThrowStuntPowderBehaviour, Random Behaviour.
+TEAM MEMBERS: THING XIN JIE, NG SIN YU
 
-GivePlansAction, TalkAction, OpenDoorAction, FlyToOtherMap, FillWaterAction, PressButtonAction and EndGame are the classes that we extend from Action class to be used in getAllowableActions.
 
-RocketPad and Rocket is the subclass of the Item class, so when the player stands on the item, the item will provides the player list of allowableActions.
+## Sample Interface
 
-Water is the class that extending from Ground, so the player cannot stands on the water, and can have FillWaterAction while standing besides the water(ground).
+^...>.....W............
 
-Oxyen Dispenser is the subclass of Item which will give the Player PressButtonAction to produce oxygen tank which provides the PickUpItem action tp the player.
+....#####....####.#....
 
-EndGame Action is added to the newPlayer actions, so it will show on the menu as a option for the player to quit game.
+..@.....#....#.P..#....
 
-newWorld extends from the World class so it will keep track if the newPlayer is still on the map, hence once the player is disappear from the map, the game automatically end and shows its corresponding prompt to the user
+....#.D...........#.G..
 
-Door class is created to store the ArrayList of keyItem.
+....#####....##+###....
 
-Rocket class is created to store the ArrayList of the rocketbody parts.
+......................Q
+
+.O...g.................
+
+.......................
+
+.......S..........n....
+
+.......................
+
+g...........G..........
+
+8: Player moves North
+
+6: Player moves East
+
+2: Player moves South
+
+4: Player moves West
+
+5: Player does nothing
+
+a: Player quit game
+
+
+
+## Game Rule
+
+Defeat final boss, Yugo Maxx, on Moonbase and carries his unconscious body back to Earth. 
+
+## Description
+
+### NPC (Non-Player Characters)
+
+G: Goon. Antagonist; follows Player; slaps Player when Player is next to Goon. 
+
+g: Grunt. Antaginist; follows Player; insults Player.
+
+n: Ninja. Antagonist; can see Player within 5 squares of it; throws stun powder on Player. When Player is hitted by stun powder, Player will stun for 2 turns.
+
+D: Doctor Maybe. Player needs to obtain rocket engine from him.
+
+Q: Q. Friendly to player; wander around the map. Player can talk and exchange rocket plan with rocket body from him.
+
+Y: YugoMaxx. Final boss on Moon. Only vulnerable to water
+
+
+### Items
+
+E: Rocket engine. Dropped by Doctor Maybe after defeated. Neccessary part to build a rocket
+
+O: Oxygen dispenser. Produce Oxygen tank
+
+T: Oxygen tank.
+
+k: Key. Dropped by Grunt/ Goon when defeated. To open a door in locked room.
+
+P: Rocket plan. 
+
+B: Rocket body. Compulsary part to build a rocket; obtained using rocket plan with Q
+
+>: Water pistol
+
+S: Spacesuit
+
++: Door. Needs a key to open the door to get into the room.
+
+^:  Rocket pad. Rocket needs to be built here. 
+
+W: Water tank
+
+R: Rocket. Requires to travel to and fro Earth/ Moon
+
+%: dead body of NPC
+
+
