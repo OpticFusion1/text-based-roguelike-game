@@ -11,6 +11,8 @@ TEAM MEMBERS: THING XIN JIE, NG SIN YU
 
 ## Sample Interface
 
+
+
 ^...>.....W............
 
 ....#####....####.#....
@@ -65,7 +67,7 @@ D: Doctor Maybe. Player needs to obtain rocket engine from him.
 
 Q: Q. Friendly to player; wander around the map. Player can talk and exchange rocket plan with rocket body from him.
 
-Y: YugoMaxx. Final boss on Moon. Only vulnerable to water
+Y: Yugo Maxx. Final boss on Moon. Only vulnerable to water
 
 
 ### Items
