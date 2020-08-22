@@ -12,7 +12,7 @@ TEAM MEMBERS: THING XIN JIE, NG SIN YU
 ## Sample Interface
 
 
-
+```
 ^...>.....W............
 
 ....#####....####.#....
@@ -34,6 +34,7 @@ TEAM MEMBERS: THING XIN JIE, NG SIN YU
 .......................
 
 g...........G..........
+```
 
 8: Player moves North
 
